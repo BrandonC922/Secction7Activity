@@ -16,7 +16,7 @@ class Title extends Phaser.Scene {
     create() {
         this.add.image(1920*.5,1080*.5,"titleScene").setScale(1.9);
         this.add.text(1920*.39,1080*.47,"Click to continue").setFontSize(40)
-        //this.input.on('pointerdown', () => this.scene.start('scene1'));
+        this.input.on('pointerdown', () => this.scene.start('Final'));
     }
 }
 const game = new Phaser.Game({
@@ -26,7 +26,7 @@ const game = new Phaser.Game({
         width: 1920,
         height: 1080
     },
-    scene: [Title],
+    scene: [Title, Final],
     title: "s7",
 });
 
