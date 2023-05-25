@@ -30,7 +30,7 @@ class Final extends Phaser.Scene {
             repeat: -1
          });
 
-         const sprite1 = this.add.sprite(1920*.5, 1080*.5, 'roly').play('roll');
+         const sprite1 = this.add.sprite(1920*.5, 1080*.5, 'roly').play('roll').setScale(2);
     }
 }
 
