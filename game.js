@@ -1,8 +1,10 @@
 class Final extends Phaser.Scene {
      constructor(){
         super('Final');
-    }
-    this.add.image(1920*.5,1080*.5,"end");
+     }
+     create(){
+          this.add.image(1920*.5,1080*.5,"end");
+     }
 }
 class Title extends Phaser.Scene {
     constructor(){
