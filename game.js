@@ -1,3 +1,9 @@
+class Final extends Phaser.Scene {
+     constructor(){
+        super('Final');
+    }
+    this.add.image(1920*.5,1080*.5,"end");
+}
 class Title extends Phaser.Scene {
     constructor(){
         super('Title');
@@ -5,6 +11,7 @@ class Title extends Phaser.Scene {
     preload(){
         this.load.path = './assets/';
         this.load.image('titleScene', 'Title.png');
+        this.load.image('end', "Victory.jpg");
     }
     create() {
         this.add.image(1920*.5,1080*.5,"titleScene").setScale(1.9);
